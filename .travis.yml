@@ -2,7 +2,16 @@ language: node_js
 node_js:
   - "6"
 install:
-  - npm install karma
+  - npm install
+  - cd test
+  - npm install
+  - npm test
+  - cd ..
+before_script:
+  - cd test
+  - npm install
+scripts:
+  - npm test
 deploy:
   provider: heroku
   api_key: fa60f88e-abe4-496d-aa9f-dd8e158151a6
