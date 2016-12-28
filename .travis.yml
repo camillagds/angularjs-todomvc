@@ -18,7 +18,7 @@ install:
 before_script:
   - npm install
 scripts:
-  - "start": "node web-server.js",
+  "start": "node web-server.js"
 deploy:
   provider: heroku
   api_key: fa60f88e-abe4-496d-aa9f-dd8e158151a6
